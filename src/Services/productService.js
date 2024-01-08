@@ -1,9 +1,9 @@
 import axios from "axios"
 
-export default class ProductService
-{
-    getProducts(){
-        //apiye request atıyoruz verileri getiriyoruz
-        return axios.get("https://localhost:44340/api/AnnouncementTypes/GetList")
-    }
+export default class ProductService {
+    async getProducts() {
+        const response =await axios.get("https://dummyjson.com/products");
+        return response;
+
+  }
 }
