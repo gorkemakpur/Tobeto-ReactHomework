@@ -5,29 +5,34 @@ import React from "react";
 import Categories from "./Categories";
 import ProductList from "../Pages/ProductList";
 import { GridColumn } from "semantic-ui-react";
-import { Grid } from 'semantic-ui-react'
+import { Grid } from "semantic-ui-react";
+import { Route, Routes } from "react-router-dom";
+import ProductDetail from "../Pages/ProductDetail";
 
 export default function Dashboard() {
   return (
     <div>
-    <Grid>
-      <Grid.Row>
-      <GridColumn  width={4}>
-          <Categories></Categories>
-      </GridColumn>
+      <Grid>
+        <Grid.Row>
+          <GridColumn width={4}>
+            <Categories></Categories>
+          </GridColumn>
 
-      <GridColumn width={12}>
-            <ProductList ProductList></ProductList>
-      </GridColumn>
-      </Grid.Row>
-    </Grid>
-      
+          <GridColumn width={12}>
+
+            <Routes>
+              <Route exact path="/" element={<ProductList />} />
+              <Route exact path="/products" element={<ProductList />} />
+              <Route path="/products/:id" element={<ProductDetail />} />
+            </Routes>
+
+
+          </GridColumn>
+        </Grid.Row>
+      </Grid>
     </div>
   );
 }
-
-
-
 
 /* <Button
         color="red"
