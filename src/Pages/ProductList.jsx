@@ -42,7 +42,6 @@ export default function ProductList() {
             <Table.HeaderCell>Stok Adeti</Table.HeaderCell>
             <Table.HeaderCell>Açıklama</Table.HeaderCell>
             <Table.HeaderCell>Kategori</Table.HeaderCell>
-            <Table.HeaderCell></Table.HeaderCell>
           </Table.Row>
         </Table.Header>
 
