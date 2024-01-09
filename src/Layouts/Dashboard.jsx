@@ -9,10 +9,12 @@ import { Grid } from "semantic-ui-react";
 import { Route, Routes } from "react-router-dom";
 import ProductDetail from "../Pages/ProductDetail";
 import CartDetail from "../Pages/CartDetail";
+import { ToastContainer } from "react-toastify";
 
 export default function Dashboard() {
   return (
     <div>
+      <ToastContainer position='bottom-right'/>
       <Grid>
         <Grid.Row>
           <GridColumn width={4}>

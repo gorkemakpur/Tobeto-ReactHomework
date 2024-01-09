@@ -5,7 +5,7 @@ export default function SignedIn({signOut}) {
   return (
     <>
         <Menu.Item>
-            <Image avatar spaced="right" src="#" text="Aziz"/>
+            <Image avatar spaced="right" src="https://geek.com.tr/wp-content/uploads/2023/04/Discord-Profil-Fotografi-Buyutme-Nasil-Yapilir.webp" text="Aziz"/>
 
         <Dropdown >            
             <Dropdown.Menu>
